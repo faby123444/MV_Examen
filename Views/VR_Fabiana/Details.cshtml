@@ -1,0 +1,30 @@
+﻿@model MV_Examen.Models.VR_Fabiana
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>VR_Fabiana</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Idv)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Idv)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Puestovr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Puestovr)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

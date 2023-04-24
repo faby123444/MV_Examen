@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MV_Examen.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<MV_ExamenContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MV_ExamenContext") ?? throw new InvalidOperationException("Connection string 'MV_ExamenContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
