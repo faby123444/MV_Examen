@@ -2,11 +2,11 @@
 {
     public class MF_Vasconez
     {
-        public int mv_edad { get; set; }
-        public decimal mv_alario { get; set; }
-        public string? mv_descricao { get; set; }
-        public bool mv_laborando { get; set; }
-        public DateTime? fecha  { get; set; }
+        public int Idm { get; set; }
+        public decimal Salariomf { get; set; }
+        public string? Nombremf { get; set; }
+        public bool Activomf { get; set; }
+        public DateTime Cumpleañosmf { get; set; }
 
     }
 }
